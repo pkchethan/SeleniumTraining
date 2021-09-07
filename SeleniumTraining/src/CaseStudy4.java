@@ -12,6 +12,8 @@ public class CaseStudy4 {
 		driver.get("https://www.cleartrip.com/");
 		
 		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//span[@class='radio__circle bs-border bc-neutral-500 bw-1 ba'])[2]")).click();
+		Thread.sleep(2000);
 		
 		boolean roundTrip=driver.findElement(By.xpath("(//span[@class='radio__circle bs-border bc-neutral-500 bw-1 ba'])[2]")).isSelected();
 		boolean returnOn=driver.findElement(By.xpath("//h4[text()='Return on']")).isDisplayed();
